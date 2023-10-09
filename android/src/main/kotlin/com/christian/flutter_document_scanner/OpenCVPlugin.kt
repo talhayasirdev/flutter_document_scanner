@@ -232,7 +232,7 @@ class OpenCVPlugin {
                         Imgproc.cvtColor(src, dstColor, Imgproc.COLOR_BGR2GRAY)
 
                         val dstGaussian = Mat()
-                        Imgproc.GaussianBlur(dstColor, dstGaussian, Size(3.0, 3.0), 0.0)
+                        Imgproc.GaussianBlur(dstColor, dstGaussian, Size(1.0, 1.0), 0.0)
 
                         val dstThreshold = Mat()
                         Imgproc.adaptiveThreshold(
