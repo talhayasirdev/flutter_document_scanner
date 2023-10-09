@@ -241,7 +241,7 @@ class OpenCVPlugin {
                             255.0,
                             Imgproc.ADAPTIVE_THRESH_GAUSSIAN_C,
                             Imgproc.THRESH_BINARY,
-                            5,
+                            7,
                             2.0
                         )
 
