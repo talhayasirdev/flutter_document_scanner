@@ -232,7 +232,7 @@ class OpenCVPlugin {
                         Imgproc.cvtColor(src, dstColor, Imgproc.COLOR_BGR2GRAY)
 
                         val dstGaussian = Mat()
-                        Imgproc.GaussianBlur(dstColor, dstGaussian, Size(3.0, 3.0), 0.0)
+                        Imgproc.GaussianBlur(dstColor, dstGaussian, Size(19.0, 19.0), 0.0)
 
                         val dstThreshold = Mat()
                         Imgproc.adaptiveThreshold(
@@ -241,11 +241,12 @@ class OpenCVPlugin {
                             255.0,
                             Imgproc.ADAPTIVE_THRESH_GAUSSIAN_C,
                             Imgproc.THRESH_BINARY,
-                            5,
-                            2.0
+                            7,
+                            1.0
                         )
 
                         Imgproc.medianBlur(dstThreshold, dstEnd, 3)
+                        
                     }
 
 
